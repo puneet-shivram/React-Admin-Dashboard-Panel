@@ -1,7 +1,7 @@
 .sidebar {
   flex: 1;
   height: calc(100vh - 50px);
-  background: #fafcff;
+  background: #353766;
   position: sticky;
   top: 50px;
 }
@@ -27,11 +27,11 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  color: grey;
+  color: #ffffff;
 }
 .sidebarListItem.active,
 .sidebarListItem:hover {
-  background: #204781;
+  background: #acacb8c7;
   color: #fff;
 }
 .sidebarIcon {
