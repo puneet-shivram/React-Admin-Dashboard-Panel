@@ -3,6 +3,7 @@ import Topbar from "./components/topbar/Topbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import UserList from "./components/userList/UserList";
 import Home from "./pages/Home";
+import User from "./pages/user/User";
 import "./app.css";
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route exact path="/users">
               <UserList />
+            </Route>
+            <Route exact path="/users/:userId">
+              <User />
             </Route>
           </Switch>
         </div>
