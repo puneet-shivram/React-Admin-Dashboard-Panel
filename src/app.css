@@ -5,3 +5,11 @@
 .others {
   flex: 4;
 }
+.width100per {
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
