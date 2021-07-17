@@ -8,7 +8,12 @@ export default function Home() {
   return (
     <div className="home">
       <FetauredInfo />
-      <Chart data={userDataAnalytics} title="User Analytics" />
+      <Chart
+        data={userDataAnalytics}
+        title="User Analytics"
+        dataKey1="ActiveUsers"
+        dataKey2="InActiveUsers"
+      />
       <div className="homeWidget">
         <WidgetSm />
         <WidgetLg />

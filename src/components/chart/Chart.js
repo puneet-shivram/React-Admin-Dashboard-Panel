@@ -9,7 +9,7 @@ import {
   Area,
 } from "recharts";
 
-export default function Chart({ data, title }) {
+export default function Chart({ data, title, dataKey1, dataKey2 }) {
   return (
     <div className="chart">
       <h3 className="chartTitle">{title}</h3>
@@ -36,14 +36,14 @@ export default function Chart({ data, title }) {
           <Tooltip />
           <Area
             type="monotone"
-            dataKey="ActiveUsers"
+            dataKey={dataKey1}
             stroke="#8884d8"
             fillOpacity={1}
             fill="url(#colorUv)"
           />
           <Area
             type="monotone"
-            dataKey="InActiveUsers"
+            dataKey={dataKey2}
             stroke="#82ca9d"
             fillOpacity={1}
             fill="url(#colorPv)"

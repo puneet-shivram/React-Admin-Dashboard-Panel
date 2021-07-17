@@ -126,15 +126,21 @@ export const userData = [
 export const productData = [
   {
     name: "Jan",
-    Sales: 4000,
+    loss: 4000,
+    profit: 2400,
+    amt: 2400,
   },
   {
     name: "Feb",
-    Sales: 3000,
+    loss: 5000,
+    profit: 1398,
+    amt: 2210,
   },
   {
     name: "Mar",
-    Sales: 5000,
+    loss: 2000,
+    profit: 9800,
+    amt: 2290,
   },
 ];
 

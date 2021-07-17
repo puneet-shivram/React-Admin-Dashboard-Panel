@@ -1,16 +1,18 @@
+import "./sidebar.css";
 import {
-  PermIdentity,
-  MailOutline,
-  Feedback,
   LineStyle,
   Timeline,
   TrendingUp,
-  Report,
-  Description,
+  PermIdentity,
+  Storefront,
   AttachMoney,
-  Assessment,
+  BarChart,
+  MailOutline,
+  DynamicFeed,
+  ChatBubbleOutline,
+  WorkOutline,
+  Report,
 } from "@material-ui/icons";
-import "./sidebar.css";
 import { Link } from "react-router-dom";
 export default function sidebar() {
   return (
@@ -45,14 +47,17 @@ export default function sidebar() {
               </li>
             </Link>
             <Link to="/products" className="link">
-              <li className="sidebarListItem">Products</li>
+              <li className="sidebarListItem">
+                <Storefront className="sidebarIcon" />
+                Products
+              </li>
             </Link>
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon" />
               Transactions
             </li>
             <li className="sidebarListItem">
-              <Assessment className="sidebarIcon" />
+              <BarChart className="sidebarIcon" />
               Reports
             </li>
           </ul>
@@ -65,11 +70,11 @@ export default function sidebar() {
               Mail
             </li>
             <li className="sidebarListItem">
-              <Feedback className="sidebarIcon" />
+              <DynamicFeed className="sidebarIcon" />
               Feedback
             </li>
             <li className="sidebarListItem">
-              <MailOutline className="sidebarIcon" />
+              <ChatBubbleOutline className="sidebarIcon" />
               Messages
             </li>
           </ul>
@@ -78,7 +83,7 @@ export default function sidebar() {
           <h3 className="sidebarTitle">Staff</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <LineStyle className="sidebarIcon" />
+              <WorkOutline className="sidebarIcon" />
               Manage
             </li>
             <li className="sidebarListItem">
